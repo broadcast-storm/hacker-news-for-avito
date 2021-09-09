@@ -9,7 +9,7 @@ const Navbar = (): JSX.Element => (
       <ul>
         <li className="block space-x-5 text-xl">
           <NavLink
-            to="/"
+            to={`${process.env.PUBLIC_URL}/`}
             exact
             activeClassName="text-blue-500"
             className="hover:text-blue-500"

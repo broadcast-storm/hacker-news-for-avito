@@ -6,7 +6,7 @@ import OpenedNewsPage from './pages/OpenedNewsPage';
 
 export default function App(): JSX.Element {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Navbar />
       <main className="min-h-screen bg-gray-100 py-32">
         <div className="containter mx-auto px-2 md:px-20">
@@ -14,12 +14,10 @@ export default function App(): JSX.Element {
             <Route exact path={`${process.env.PUBLIC_URL}/`}>
               <MainPage />
             </Route>
-            <Route exact path={`${process.env.PUBLIC_URL}/:id`}>
+            <Route path={`${process.env.PUBLIC_URL}/:id`}>
               <OpenedNewsPage />
             </Route>
-            <Route path="*">
-              <NotFound />
-            </Route>
+            <Route component={NotFound} />
           </Switch>
         </div>
       </main>
