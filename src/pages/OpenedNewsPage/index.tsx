@@ -131,7 +131,7 @@ const OpenedNewsPage = (): JSX.Element => {
             <div className="flex justify-between items-center mt-4">
               <NavLink
                 className="text-blue-600 hover:underline flex justify-left items-center"
-                to="/"
+                to={`${process.env.PUBLIC_URL}/`}
               >
                 <img src={ArrowSvg} alt="" className="w-3 mr-1" />
                 <span>К списку новостей</span>

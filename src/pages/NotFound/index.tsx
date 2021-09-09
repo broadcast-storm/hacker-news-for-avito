@@ -10,7 +10,7 @@ const NotFound = (): JSX.Element => (
     </div>
     <div className="mt-6 flex justify-center">
       <NavLink
-        to="/"
+        to={`${process.env.PUBLIC_URL}/`}
         className="text-gray-500 font-mono text-xl bg-gray-200 p-3 rounded-md hover:shadow-md "
       >
         На главную

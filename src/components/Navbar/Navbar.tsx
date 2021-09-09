@@ -7,7 +7,7 @@ const Navbar = (): JSX.Element => (
         Hacker News
       </h2>
       <ul>
-        <li className="hidden sm:block space-x-5 text-xl">
+        <li className="block space-x-5 text-xl">
           <NavLink
             to="/"
             exact
@@ -17,11 +17,6 @@ const Navbar = (): JSX.Element => (
             Главная
           </NavLink>
         </li>
-        <div className="sm:hidden space-y-1 cursor-pointer">
-          <span className="w-8 h-1 bg-gray-600 rounded-full block" />
-          <span className="w-8 h-1 bg-gray-600 rounded-full block" />
-          <span className="w-8 h-1 bg-gray-600 rounded-full block" />
-        </div>
       </ul>
     </nav>
   </header>

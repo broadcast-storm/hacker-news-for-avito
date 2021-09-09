@@ -20,7 +20,7 @@ const NewsItem = ({ story }: NewsItemProps): JSX.Element => {
   };
   return (
     <Link
-      to={`/${story.id}`}
+      to={`${process.env.PUBLIC_URL}/${story.id}`}
       className="block group bg-white p-8 rounded-lg shadow-lg relative hover:shadow-2xl transition duration-500 my-4 cursor-pointer"
     >
       <h2 className="text-lg md:text-2xl text-gray-800 font-semibold mb-3 group-hover:text-blue-500">
